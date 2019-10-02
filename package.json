@@ -1,0 +1,23 @@
+{
+  "name": "calc_wind",
+  "version": "1.0.0",
+  "description": "calc the destination of a vector with a wind(x)",
+  "main": "app.cpp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El-Chapo0133/calcWind.git"
+  },
+  "keywords": [
+    "cpp",
+    "vector"
+  ],
+  "author": "Loris Levêque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/El-Chapo0133/calcWind/issues"
+  },
+  "homepage": "https://github.com/El-Chapo0133/calcWind#readme"
+}
