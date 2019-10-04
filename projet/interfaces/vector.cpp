@@ -1,37 +1,35 @@
 #include <iostream>
+#include "vector.h"
 
 using namespace std;
 
-class Vector {
-    public:
-        int getX() {
-            return x;
-        };
-        int getY() {
-            return y;
-        };
-        int getZ() {
-            return z;
-        };
-        int getPower() {
-            return power;
-        };
-        void setX(int value) {
-            x = value;
-        };
-        void setY(int value) {
-            y = value;
-        };
-        void setZ(int value) {
-            z = value;
-        };
-        void setPower(int value) {
-            power = value;
-        };
-
-    private:
-        int x;
-        int y;
-        int z;
-        int power;
+Vector::Vector() {
+    x = 0;
+    y = 0;
+    z = 0;
+    power = 0;
+}
+int Vector::getX() {
+    return x;
+};
+int Vector::getY() {
+    return y;
+};
+int Vector::getZ() {
+    return z;
+};
+double Vector::getPower() {
+    return power;
+};
+void Vector::setX(int value) {
+    x = value;
+};
+void Vector::setY(int value) {
+    y = value;
+};
+void Vector::setZ(int value) {
+    z = value;
+};
+void Vector::setPower(double value) {
+    power = value;
 };

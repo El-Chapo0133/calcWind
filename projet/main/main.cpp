@@ -1,23 +1,21 @@
 #include <iostream>
-#include "../interfaces/vector.cpp"
-#include "../objects/thing.cpp"
+#include <string>
+#include "../objects/wind.h"
 #include "../objects/wind.cpp"
 
 using namespace std;
 
-
-void setVariables(Wind wind, Thing thing) {
-    thing.setX(8);
-    thing.setY(3);
-    thing.setZ(0);
-    wind.setX(3);
-    wind.setY(1);
-    wind.setZ(0);
-};
-
 int main() {
     cout << "starting the program" << endl;
-    Thing thing;
+
     Wind wind;
-    setVariables(wind, thing);
+
+    wind.setX(5);
+    wind.setY(7);
+
+    wind.setPower(wind.calcPower(19, 17, 50));
+
+    cout << (wind.calcRange() * wind.getPower()) * 3.6 << endl;
+
+    cout << "end of the program" << endl;
 };
