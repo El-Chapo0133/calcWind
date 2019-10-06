@@ -31,7 +31,11 @@ double Wind::calcPower(double airHeat, double ambiantHeat, double groundIncli) {
     if (isRefChaleurUpperOne(t_refHeat)) {
         if (isIncliRight(groundIncli)) {
             /* calc parable */
-            incliPower = pow(groundIncli, 2) / 100;
+            double t_groundIncli = groundIncli;
+            if (t_groundIncli == 0)
+                t_groundIncli = 1;
+            incliPower = pow(t_groundIncli, 2) / 100;
+            cout << incliPower << endl;
         } else {
             cout << "wrong incli" << endl;
         }
@@ -55,6 +59,5 @@ double Wind::calcRange() {
     double y = pow(getY(), 2);
     /* calc squared root */
     double result = sqrt((x + y));
-    
     return result;
 }
